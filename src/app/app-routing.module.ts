@@ -1,15 +1,18 @@
 import { NgModule } from '@angular/core';
-import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
+import { AuthService } from './auth.service'
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)},
+  { path: '', redirectTo: 'tabs', pathMatch: 'full' },
+  { path: 'login', loadChildren: './login/login.module#LoginPageModule' },
+  { path: 'register', loadChildren: './register/register.module#RegisterPageModule' },
+  { path: 'tabs', loadChildren: './tabs/tabs.module#TabsPageModule', canActivate: [AuthService] },
 ];
 
+// localhost/tabs
+
 @NgModule({
-  imports: [
-    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
-  ],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

@@ -1,4 +1,4 @@
-# AlertSocial
+# AlertCity
 Progetto per Ingegneria Del Software 2019 
 
 <img width="744" alt="schermata 2019-01-24 alle 10 26 48" src="">

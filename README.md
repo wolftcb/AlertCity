@@ -1,9 +1,6 @@
 # AlertCity
 Progetto per Ingegneria Del Software 2020 
 
-<img width="744" alt="schermata 2019-01-24 alle 10 26 48" src="">
-
-
 ## Deploy Firebase Hosting:
 Deploy on Firebase Hosting https://alertstreet-1566925271437.firebaseapp.com/
 

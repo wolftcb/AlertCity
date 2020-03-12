@@ -1,5 +1,5 @@
-# AlertCity
-Progetto per Ingegneria del Software 2020 
+# AlertCity Progetto per Ingegneria del Software 2020 
+
 
 <img width="744" alt="schermata 2019-01-24 alle 10 26 48" src="">
 
